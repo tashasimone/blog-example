@@ -1,0 +1,238 @@
+/*
+ Theme Name: tashimone custom
+ Theme URI: 
+ Author: Tasha Peterson
+ Author URI: 
+ Description: my custom theme for my blog site
+ Version: 1.0
+ Tags: 
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400');
+
+article ul {
+    list-style-image: url('images/bullet-small.png');
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 32px;
+    color: #3D4045;
+}
+.feature-img article {    
+    padding-top: 285px;
+}
+.index:nth-child(even) h2 {
+    text-align: right; 
+   /*WHY ISN'T THIS WORKING*/
+}
+.index .feature-img article:hover {    
+    padding-top: 0px;
+    transition: padding-top 0.7s ease;
+}
+.index .feature-img article:hover .entry-content {  
+    color: #E7EAEF;
+    background-color: rgba(61,64,69,0.5);
+    padding: 12px;
+    margin: 0;
+    height: 260px;
+    visibility: visible;
+}
+
+.feature-img {
+    max-width: 980px;
+    width: 100%;
+    margin-bottom: 16px;
+    overflow: hidden;
+}
+.index .feature-img .entry-content {
+    visibility: hidden;
+  transition: visibility 0s linear;
+  
+}
+.index .entry-content p {
+    color: #E7EAEF;
+}
+.bio {
+    max-width: 308px;
+}
+body {
+    background-color: #e7eaef;
+    font-family: 'Source Sans Pro', sans-serif;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+blockquote {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 2.4rem;
+    line-height: 32px;
+    color: #4A4A4A;
+    font-weight: 700;
+    border-top: 1px dotted #40405E;
+    border-bottom: 1px dotted #40405E;
+}
+html {
+    font-size: 62.5%;
+}
+h1 {
+    font-family: "Cabin Sketch", cursive;
+    font-size: 6.0rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 70px;
+    color: #E7EAEF;
+}
+a, a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+footer {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-align: center;
+    line-height: 32px;
+    color: #3D4045;
+    margin: 32px 0;
+}
+h2 {    
+    font-family: "Cabin Sketch", cursive;
+    font-size: 6.4rem;
+    line-height: 75px;
+    color: #E7EAEF;
+    font-weight: 400;
+    background-color: rgba(61,64,69,0.5);
+    padding: 12px;
+    margin: 0;
+}
+h3 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 3.2rem;
+    line-height: 32px;
+    color: #4A4A4A;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+h4 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 2.4rem;
+    line-height: 32px;
+    color: #40405E;
+    font-weight: 400;    
+}
+h5 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 2.4rem;
+    line-height: 32px;
+    color: #4A4A4A;
+    font-weight: 400; 
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+header {
+    background-color: #3D4045;
+    list-style: none;
+}
+li.widget {
+    list-style: none;
+}
+main {
+    display: flex;
+}
+.main-content {
+    flex: 3;
+    padding: 0 35px 0 15px;
+}
+.sidebar {
+    flex: 1;
+}
+main>h2 {
+    display: none;
+}
+.menu {
+    list-style: none;
+}
+ol {
+    margin-left: 0;
+    padding-right: 0;
+    list-style-type: none;
+}
+ol li {
+    counter-increment: step-counter;
+}
+ol li::before {
+    content: counter(step-counter);
+    margin-right: 5px;
+    font-size: 80%;
+    background-color: #4A4A4A;
+    color: #E7EAEF;
+    font-weight: bold;
+    padding: 3px 8px;
+}
+p {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 2.0rem;
+    font-weight: 300;
+    line-height: 32px;
+    color: #3D4045;
+    text-transform: lowercase;
+    margin-top: 8px;
+}
+.recent-posts {
+    margin-top: 28px;
+}
+.recent-posts ul {
+    list-style-image: url('images/bullet-large.png'); 
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 2.4rem;
+    line-height: 64px;
+    color: #4A4A4A;
+    margin: 0;
+}
+#nav-menu-2, h1 {
+    flex: 1;
+    margin: 0;
+}
+#menu-social-media-links li {
+    float: left;
+    padding: 9px 4px 5px 4px;
+}
+#menu-social-media-links li:hover {
+    background-color: #40405E;
+}
+#menu-social-media-links li:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+header {
+    display: flex;
+    max-height: 64px;
+    margin-bottom: 32px;
+}
+.widget_nav_menu h2 {
+    display: none;
+}
+.widgettitle {
+    width: 308px;
+    font-family: "Cabin Sketch", cursive;
+    font-size: 4.8rem;
+    text-align: center;
+    line-height: 56px;
+    color: #40405E;
+    background-color: rgba(0,0,0,0.0);
+    font-weight: 400;
+    margin: 0 0 18px 0;
+    padding: 0;
+}
+.widget a:hover {
+    color: #40405E;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+@media screen and (max-width: 990px) {
+    h2 {
+        font-size: 4.8rem;
+    }
+}
